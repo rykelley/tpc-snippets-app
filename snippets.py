@@ -31,19 +31,22 @@ def get(name):
 def main():
     """Main function"""
     logging.info("Constructing parser")
-parser = argparse.ArgumentParser(description="Store and retrieve snippets of text")
+    parser = argparse.ArgumentParser(description="Store and retrieve snippets of text")
 
-subparsers = parser.add_subparsers(dest="command", help="Available commands")
-# building put parser
-logging.debug("Constructing put subparser")
-put_parser = subparsers.add_parser("put", help="Store a snippet")
-put_parser.add_argument("name", help=" Stores Name")
-put_parser.add_argument("snippets", help=" Stores the snippet of text")
-# building get parser
-logging.debug("Building get Subparser")
-get_parser = subparsers.add_parser("get", help="Gets Name")
-get_parser.add_argument("name", help="Gets name")
-arguments = parser.parse_args(sys.argv[1:])
+    subparsers = parser.add_subparsers(dest="command", help="Available commands")
+
+    # building put parser
+    logging.debug("Constructing put subparser")
+    put_parser = subparsers.add_parser("put", help="Store a snippet")
+    put_parser.add_argument("name", help=" Stores Name")
+    put_parser.add_argument("snippets", help=" Stores the snippet of text")
+
+    # building get parser
+    logging.debug("Building get Subparser")
+    get_parser = subparsers.add_parser("get", help="Gets Name")
+    get_parser.add_argument("name", help="Gets name")
+
+    arguments = parser.parse_args(sys.argv[1:])
 
 if __name__ == "__main__":
     main()
