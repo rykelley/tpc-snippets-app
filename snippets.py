@@ -47,6 +47,17 @@ def main():
     get_parser.add_argument("name", help="Gets name")
 
     arguments = parser.parse_args(sys.argv[1:])
+    # convert passed arguments from namespaces to dictionary
+    arguments = var(arguments)
+    command = arguments.pop("Command")
+
+    if command == "put":
+        name, snippet = put(**arguments)
+        print("Stored {!r}} to {!r}".format(snippet, name))
+    elif command == "get":
+        snippet = get(**arguments)
+        print("Retrieved {!r}".format(snippet))
+
 
 if __name__ == "__main__":
     main()
