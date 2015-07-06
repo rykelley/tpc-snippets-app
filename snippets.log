@@ -1,2 +1,4 @@
 ERROR:root:FIXME: Unimplemented - put('list', 'A sequence of things - created using []')
 ERROR:root:FIXME: Unimplemented - get('list')
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing put subparser
