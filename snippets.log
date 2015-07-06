@@ -2,3 +2,9 @@ ERROR:root:FIXME: Unimplemented - put('list', 'A sequence of things - created us
 ERROR:root:FIXME: Unimplemented - get('list')
 DEBUG:root:Constructing put subparser
 DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing put subparser
+INFO:root:Constructing parser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Constructing put subparser
+DEBUG:root:Building get Subparser
