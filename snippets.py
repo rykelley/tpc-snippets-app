@@ -8,6 +8,10 @@ import sys
 # Set the log output file, and the log level
 logging.basicConfig(filename="snippets.log", level=logging.DEBUG)
 
+logging.debug("Connecting to PostgreSQL")
+connection = psycopg2.connect("dbname='snippets' user='root' host='104.131.148.235'")
+logging.debug("Database connection established.")
+
 
 def put(name, snippet):
     """
@@ -18,6 +22,7 @@ def put(name, snippet):
     logging.error("FIXME: Unimplemented - put({!r}, {!r})".format(name, snippet))
     return name, snippet
 
+
 def get(name):
     """Retrieve the snippet with a given name.
 
@@ -27,6 +32,7 @@ def get(name):
     """
     logging.error("FIXME: Unimplemented - get({!r})".format(name))
     return ""
+
 
 def main():
     """Main function"""
