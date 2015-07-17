@@ -8,6 +8,10 @@ import sys
 # Set the log output file, and the log level
 logging.basicConfig(filename="snippets.log", level=logging.DEBUG)
 
+logging.debug("Connecting to PostgreSQL")
+connection = psycopg2.connect("dbname='snippets' user='root' host='104.131.148.235'")
+logging.debug("Database connection established.")
+
 
 def put(name, snippet):
     """
