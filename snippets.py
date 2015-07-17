@@ -18,6 +18,7 @@ def put(name, snippet):
     logging.error("FIXME: Unimplemented - put({!r}, {!r})".format(name, snippet))
     return name, snippet
 
+
 def get(name):
     """Retrieve the snippet with a given name.
 
@@ -27,6 +28,7 @@ def get(name):
     """
     logging.error("FIXME: Unimplemented - get({!r})".format(name))
     return ""
+
 
 def main():
     """Main function"""
