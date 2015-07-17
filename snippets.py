@@ -4,6 +4,7 @@ __author__ = 'Ryan'
 import logging
 import argparse
 import sys
+import psycopg2
 
 # Set the log output file, and the log level
 logging.basicConfig(filename="snippets.log", level=logging.DEBUG)
