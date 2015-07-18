@@ -15,11 +15,14 @@ logging.debug("Database connection established.")
 
 
 def put(name, snippet):
-    """
-    Store a snippet with an associated name.
 
-    Returns the name and the snippet
-    """
+    logging.info("Storing snippet {!r}: {!r}".format(name, snippet))
+    cursor = connection.cursor()
+    command = "insert into snippets(%s,%s)"
+    cursor.excute(command, (name, snippet))
+    connection.commit()
+    logging.debug("Snippets stored")
+
     logging.error("FIXME: Unimplemented - put({!r}, {!r})".format(name, snippet))
     return name, snippet
 
