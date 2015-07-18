@@ -18,7 +18,7 @@ def put(name, snippet):
 
     logging.info("Storing snippet {!r}: {!r}".format(name, snippet))
     cursor = connection.cursor()
-    command = "insert into snippets(%s,%s)"
+    command = "insert into snippets VALUES (%s,%s)"
     cursor.execute(command, (name, snippet))
     connection.commit()
     logging.debug("Snippets stored")
@@ -61,7 +61,7 @@ def main():
 
     if command == "put":
         name, snippet = put(**arguments)
-        print("Stored {!r}} to {!r}".format(snippet, name))
+        print("Stored {!r} to {!r}".format(snippet, name))
     elif command == "get":
         snippet = get(**arguments)
         print("Retrieved {!r}".format(snippet))
