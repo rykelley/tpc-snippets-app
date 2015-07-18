@@ -46,20 +46,20 @@ def main():
     subparsers = parser.add_subparsers(dest="command", help="Available commands")
 
     # building put parser
-    logging.debug("Constructing put subparser")
+    logging.debug("Constructing put sub-parser")
     put_parser = subparsers.add_parser("put", help="Store a snippet")
     put_parser.add_argument("name", help=" Stores Name")
     put_parser.add_argument("snippets", help=" Stores the snippet of text")
 
     # building get parser
-    logging.debug("Building get Subparser")
+    logging.debug("Building get sub-parser")
     get_parser = subparsers.add_parser("get", help="Gets Name")
     get_parser.add_argument("name", help="Gets name")
 
     arguments = parser.parse_args(sys.argv[1:])
     # convert passed arguments from namespaces to dictionary
-    arguments = var(arguments)
-    command = arguments.pop("Command")
+    arguments = vars(arguments)
+    command = arguments.pop("command")
 
     if command == "put":
         name, snippet = put(**arguments)
