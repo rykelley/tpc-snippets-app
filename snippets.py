@@ -1,6 +1,5 @@
 __author__ = 'Ryan'
 
-
 import logging
 import argparse
 import sys
@@ -15,7 +14,6 @@ logging.debug("Database connection established.")
 
 
 def put(name, snippet):
-
     logging.info("Storing snippet {!r}: {!r}".format(name, snippet))
     cursor = connection.cursor()
     command = "insert into snippets VALUES (%s,%s)"
@@ -26,14 +24,13 @@ def put(name, snippet):
 
 
 def get(name):
-    """Retrieve the snippet with a given name.
-
-    If there is no such snippet...
-
-    Returns the snippet.
-    """
-    logging.error("FIXME: Unimplemented - get({!r})".format(name))
-    return ""
+    logging.info("grabbing snippet {!r}".format(name,))
+    cursor = connection.cursor()
+    command = "select message from snippets where keyword = (%s)"
+    cursor.execute(command, (name,))
+    fetch = cursor.fetchone()
+    logging.debug("Fetched it")
+    return fetch
 
 
 def main():
