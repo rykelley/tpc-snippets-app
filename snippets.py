@@ -19,11 +19,9 @@ def put(name, snippet):
     logging.info("Storing snippet {!r}: {!r}".format(name, snippet))
     cursor = connection.cursor()
     command = "insert into snippets(%s,%s)"
-    cursor.excute(command, (name, snippet))
+    cursor.execute(command, (name, snippet))
     connection.commit()
     logging.debug("Snippets stored")
-
-    logging.error("FIXME: Unimplemented - put({!r}, {!r})".format(name, snippet))
     return name, snippet
 
 
@@ -49,7 +47,7 @@ def main():
     logging.debug("Constructing put sub-parser")
     put_parser = subparsers.add_parser("put", help="Store a snippet")
     put_parser.add_argument("name", help=" Stores Name")
-    put_parser.add_argument("snippets", help=" Stores the snippet of text")
+    put_parser.add_argument("snippet", help=" Stores the snippet of text")
 
     # building get parser
     logging.debug("Building get sub-parser")
