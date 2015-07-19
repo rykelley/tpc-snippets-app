@@ -38,6 +38,18 @@ def get(name):
     return fetch[0]
 
 
+def catalog():
+    """Query the available keywords from the snippets table."""
+    logging.info("Querying the database")
+    with connection.cursor(cursor_factory=psycopg2.extras.DictCursor) as cursor:
+        cursor.execute(
+            "select keyword from snippets where order by keyword ASC")
+        rows = cursor.fetchall()
+        for row in rows:
+            print(row['keyword'])
+    logging.debug("Query complete")
+
+
 def main():
     """Main function"""
     logging.info("Constructing parser")
@@ -56,6 +68,11 @@ def main():
     get_parser = subparsers.add_parser("get", help="Gets Name")
     get_parser.add_argument("name", help="Gets name")
 
+    # building the catalog parser
+    logging.debug("Building the catalog sub-parser")
+    catalog_parser = subparsers.add_parser("catalog", help="catalogs some stuff")
+    catalog_parser.add_argument("catalog", help="catalogs some stuff")
+
     arguments = parser.parse_args(sys.argv[1:])
     # convert passed arguments from namespaces to dictionary
     arguments = vars(arguments)
@@ -67,6 +84,9 @@ def main():
     elif command == "get":
         snippet = get(**arguments)
         print("Retrieved {!r}".format(snippet))
+    elif command == "catalog":
+        catalog()
+        print("retrieved keywords")
 
 
 if __name__ == "__main__":
