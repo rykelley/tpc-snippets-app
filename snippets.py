@@ -41,12 +41,12 @@ def get(name):
 def catalog():
     """Query the available keywords from the snippets table."""
     logging.info("Querying the database")
-    with connection.cursor(cursor_factory=psycopg2.extras.DictCursor) as cursor:
+    with connection.cursor() as cursor:
         cursor.execute(
-            "select keyword from snippets where order by keyword ASC")
+            "select keyword from snippets order by keyword ASC")
         rows = cursor.fetchall()
         for row in rows:
-            print(row['keyword'])
+            print(row[0])
     logging.debug("Query complete")
 
 

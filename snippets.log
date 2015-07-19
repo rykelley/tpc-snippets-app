@@ -553,3 +553,123 @@ INFO:root:Constructing parser
 DEBUG:root:Constructing put sub-parser
 DEBUG:root:Building get sub-parser
 DEBUG:root:Building the catalog sub-parser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put sub-parser
+DEBUG:root:Building get sub-parser
+DEBUG:root:Building the catalog sub-parser
+INFO:root:Querying the database
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put sub-parser
+DEBUG:root:Building get sub-parser
+DEBUG:root:Building the catalog sub-parser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put sub-parser
+DEBUG:root:Building get sub-parser
+DEBUG:root:Building the catalog sub-parser
+INFO:root:Querying the database
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put sub-parser
+DEBUG:root:Building get sub-parser
+DEBUG:root:Building the catalog sub-parser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put sub-parser
+DEBUG:root:Building get sub-parser
+DEBUG:root:Building the catalog sub-parser
+INFO:root:Querying the database
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put sub-parser
+DEBUG:root:Building get sub-parser
+DEBUG:root:Building the catalog sub-parser
+INFO:root:Querying the database
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put sub-parser
+DEBUG:root:Building get sub-parser
+DEBUG:root:Building the catalog sub-parser
+INFO:root:Querying the database
+DEBUG:root:Query complete
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put sub-parser
+DEBUG:root:Building get sub-parser
+DEBUG:root:Building the catalog sub-parser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put sub-parser
+DEBUG:root:Building get sub-parser
+DEBUG:root:Building the catalog sub-parser
+INFO:root:Querying the database
+DEBUG:root:Query complete
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put sub-parser
+DEBUG:root:Building get sub-parser
+DEBUG:root:Building the catalog sub-parser
+INFO:root:Querying the database
+DEBUG:root:Query complete
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put sub-parser
+DEBUG:root:Building get sub-parser
+DEBUG:root:Building the catalog sub-parser
+INFO:root:Querying the database
+DEBUG:root:Query complete
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put sub-parser
+DEBUG:root:Building get sub-parser
+DEBUG:root:Building the catalog sub-parser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put sub-parser
+DEBUG:root:Building get sub-parser
+DEBUG:root:Building the catalog sub-parser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put sub-parser
+DEBUG:root:Building get sub-parser
+DEBUG:root:Building the catalog sub-parser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put sub-parser
+DEBUG:root:Building get sub-parser
+DEBUG:root:Building the catalog sub-parser
+INFO:root:Querying the database
+DEBUG:root:Query complete
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put sub-parser
+DEBUG:root:Building get sub-parser
+DEBUG:root:Building the catalog sub-parser
+INFO:root:Querying the database
+DEBUG:root:Query complete
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put sub-parser
+DEBUG:root:Building get sub-parser
+DEBUG:root:Building the catalog sub-parser
+INFO:root:Querying the database
+DEBUG:root:Query complete
