@@ -16,11 +16,17 @@ logging.debug("Database connection established.")
 def put(name, snippet):
     logging.info("Storing snippet {!r}: {!r}".format(name, snippet))
     cursor = connection.cursor()
-    command = "insert into snippets VALUES (%s,%s)"
-    cursor.execute(command, (name, snippet))
-    connection.commit()
-    logging.debug("Snippets stored")
-    return name, snippet
+    try:
+        command = "insert into snippets VALUES (%s,%s)"
+        cursor.execute(command, (name, snippet))
+    except psycopg2.IntegrityError as e:
+        connection.rollback()
+        command = "update snippets set message=%s where keyword=%s"
+        cursor.execute(command, (snippet, name))
+
+        connection.commit()
+        logging.debug("Snippets stored")
+        return name, snippet
 
 
 def get(name):
@@ -30,8 +36,6 @@ def get(name):
     cursor.execute(command, (name,))
     fetch = cursor.fetchone()
     logging.debug("Fetched it")
-    # if not fetch:
-
     return fetch[0]
 
 
