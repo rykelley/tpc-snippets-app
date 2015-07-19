@@ -373,3 +373,50 @@ DEBUG:root:Constructing put sub-parser
 DEBUG:root:Building get sub-parser
 INFO:root:grabbing snippet 'Test'
 DEBUG:root:Fetched it
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put sub-parser
+DEBUG:root:Building get sub-parser
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put sub-parser
+DEBUG:root:Building get sub-parser
+INFO:root:grabbing snippet 'Test233'
+DEBUG:root:Fetched it
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put sub-parser
+DEBUG:root:Building get sub-parser
+INFO:root:grabbing snippet 'Test233'
+DEBUG:root:Fetched it
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put sub-parser
+DEBUG:root:Building get sub-parser
+INFO:root:grabbing snippet 'Test'
+DEBUG:root:Fetched it
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put sub-parser
+DEBUG:root:Building get sub-parser
+INFO:root:grabbing snippet 'Test1'
+DEBUG:root:Fetched it
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put sub-parser
+DEBUG:root:Building get sub-parser
+INFO:root:grabbing snippet 'Test1'
+DEBUG:root:Fetched it
+DEBUG:root:Connecting to PostgreSQL
+DEBUG:root:Database connection established.
+INFO:root:Constructing parser
+DEBUG:root:Constructing put sub-parser
+DEBUG:root:Building get sub-parser
+INFO:root:grabbing snippet 'Test13'
+DEBUG:root:Fetched it

@@ -30,7 +30,9 @@ def get(name):
     cursor.execute(command, (name,))
     fetch = cursor.fetchone()
     logging.debug("Fetched it")
-    return fetch
+    # if not fetch:
+
+    return fetch[0]
 
 
 def main():
