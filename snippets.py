@@ -23,7 +23,6 @@ def put(name, snippet):
         connection.rollback()
         command = "update snippets set message=%s where keyword=%s"
         cursor.execute(command, (snippet, name))
-
         connection.commit()
         logging.debug("Snippets stored")
         return name, snippet
